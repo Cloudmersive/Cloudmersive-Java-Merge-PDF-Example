@@ -41,18 +41,12 @@ public class Main {
 
             
             MergeDocumentApi apiInstance = new MergeDocumentApi();
-            File inputFile1 = new File("/path/to/inputfile"); // File | First input file to perform the operation on.
-            File inputFile2 = new File("/path/to/inputfile"); // File | Second input file to perform the operation on.
-            File inputFile3 = new File("/path/to/inputfile"); // File | Third input file to perform the operation on.
-            File inputFile4 = new File("/path/to/inputfile"); // File | Fourth input file to perform the operation on.
-            File inputFile5 = new File("/path/to/inputfile"); // File | Fifth input file to perform the operation on.
-            File inputFile6 = new File("/path/to/inputfile"); // File | Sixth input file to perform the operation on.
-            File inputFile7 = new File("/path/to/inputfile"); // File | Seventh input file to perform the operation on.
-            File inputFile8 = new File("/path/to/inputfile"); // File | Eighth input file to perform the operation on.
-            File inputFile9 = new File("/path/to/inputfile"); // File | Ninth input file to perform the operation on.
-            File inputFile10 = new File("/path/to/inputfile"); // File | Tenth input file to perform the operation on.
+            File inputFile1 = new File("./pdf1.pdf"); // File | First input file to perform the operation on.
+            File inputFile2 = new File("./pdf2.pdf"); // File | Second input file to perform the operation on.
+            File inputFile3 = new File("./pdf3.pdf"); // File | Third input file to perform the operation on.
+
             try {
-                byte[] result = apiInstance.mergeDocumentPdfMulti(inputFile1, inputFile2, inputFile3, inputFile4, inputFile5, inputFile6, inputFile7, inputFile8, inputFile9, inputFile10);
+                byte[] result = apiInstance.mergeDocumentPdfMulti(inputFile1, inputFile2, inputFile3, null, null, null, null, null, null, null);
                 System.out.println(result);
             } catch (ApiException e) {
                 System.err.println("Exception when calling MergeDocumentApi#mergeDocumentPdfMulti");
